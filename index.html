@@ -12,7 +12,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 </head>
 <body>
-     <div id="container">
+     <div id="container" class="container">
           <!-- overlay -->
           <div id="stick">
                <img src="images/odin-logo.png" alt="Odin">
@@ -50,18 +50,18 @@
                               </li>
                               <li>
                                    <label for="phone-no">PHONE NUMBER</label>
-                                   <input type="number" name="phone-no" id="phone-no" required>
+                                   <input type="number" name="phone-no" id="phone-no" minlength="10" maxlength="10">
                               </li>
                          </ul>
 
                          <ul>
                               <li>
                                    <label for="password">PASSWORD</label>
-                                   <input type="password" name="password" id="password" required>
+                                   <input type="password" name="password" id="password" class="" required>
                               </li>
                               <li>
                                    <label for="conf-password">CONFIRM PASSWORD</label>
-                                   <input type="password" name="conf-password" id="conf-password" required>
+                                   <input type="password" name="conf-password" id="conf-password" class="" required>
                               </li>
                          </ul>
                     </div>
@@ -74,5 +74,7 @@
                </form>
           </div>
      </div>
+
+     <script src="script.js"></script>
 </body>
 </html>

@@ -90,8 +90,15 @@ body{
 }
 
 /* other functionality */
-#container input:focus{
+.container input:focus{
      outline-color: blue;
 }
 
-#container input
+.password-match {
+     outline-color: green;
+ }
+
+ .password-unMatch {
+     outline-color: red;
+ }
+ 
