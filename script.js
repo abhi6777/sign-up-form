@@ -1,6 +1,7 @@
 const passwordInput = document.querySelector("#password");
 const confPasswordInput = document.querySelector("#conf-password");
 const submitButton = document.querySelector("#footer button");
+const message = document.querySelector("#message");
 
 check();
 
@@ -11,6 +12,9 @@ document.addEventListener("click", () => {
 function check() {
     const passwordValue = passwordInput.value;
     const confPasswordValue = confPasswordInput.value;
+    const messagePush = message;
+    
+    let messageText = "Password do not match";
 
     if (passwordValue === confPasswordValue) {
         passwordInput.classList.add("password-match");
@@ -26,5 +30,7 @@ function check() {
         // Add the password-unMatch class
         passwordInput.classList.add("password-unMatch");
         confPasswordInput.classList.add("password-unMatch");
+        messagePush.innerHTML = messageText;
+        return;
     }
 }
