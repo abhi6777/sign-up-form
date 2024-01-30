@@ -1,0 +1,97 @@
+body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Poor Story', system-ui;
+     background-color: black;
+     color: white;
+}
+
+#container{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     /* flex-direction: row; */
+}
+
+#image-sec{
+     width: 30vw;
+}
+
+#main-container{
+     width: 70vw;
+     padding: 2em;
+     margin-left: 5em;
+     margin-right: 5em;
+}
+
+#image-sec img[alt = "Image"]{
+     width: 30vw;
+     height: 100vh;
+}
+
+#hero ul{
+     display: flex;
+     list-style: none;
+}
+
+#hero ul li{
+     margin-right: 3em;
+}
+
+#hero input{
+     width: 15em;
+     border: #E5E7EB;
+}
+
+#hero input,#hero label{
+     display: block;
+}
+
+#stick img[alt = "Odin"]{
+     width: 5em;
+     height: 7em;
+     position: static;
+}
+
+#stick{
+     height: 10vw;
+     width: 30vw;
+     display: flex;
+     background-color: rgba(0, 0, 0, 0.6);
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     bottom: 50%;
+     gap: 2em;
+}
+
+#odin{
+     margin: 0;
+     padding: 0;
+     position: static;
+     color: white;
+     font-size: 5em;
+}
+
+#footer button{
+     width: 15em;
+     height: 3em;
+     border-radius: 20px;
+     background-color: #596D48;
+}
+
+/* bottom spacing */
+#heading{
+     margin-bottom: 5em;
+}
+
+#hero{
+     margin-bottom: 3em;
+}
+
+/* other functionality */
+#container input:focus{
+     outline-color: blue;
+}
+
+#container input
